@@ -9,11 +9,13 @@ class ImageCell: UITableViewCell {
 	@IBOutlet weak var thumbnail: UIImageView!
 	@IBOutlet weak var filename: UILabel!
 	@IBOutlet weak var filesize: UILabel!
-
-	func configureCell (image: UIImage, filename: String, filesize: String) {
+	@IBOutlet weak var md5: UILabel!
+	
+	func configureCell (image: UIImage, filename: String, filesize: String, md5: String) {
 		thumbnail.image = image
 		self.filename.text = filename
 		self.filesize.text = "\(filesize) bytes"
+		self.md5.text = md5
 	}
 	
 }

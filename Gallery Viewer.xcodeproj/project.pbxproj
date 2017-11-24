@@ -11,6 +11,7 @@
 		481DF9431FC6C51700578F8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 481DF9411FC6C51700578F8B /* Main.storyboard */; };
 		481DF9451FC6C51700578F8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 481DF9441FC6C51700578F8B /* Assets.xcassets */; };
 		481DF9481FC6C51700578F8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 481DF9461FC6C51700578F8B /* LaunchScreen.storyboard */; };
+		4867E60B1FC8299A00F95F09 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867E60A1FC8299A00F95F09 /* FirstViewController.swift */; };
 		489D20271FC6D5E0001B4954 /* ImagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D20261FC6D5E0001B4954 /* ImagesTableViewController.swift */; };
 		489D20291FC6D768001B4954 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D20281FC6D768001B4954 /* ImageCell.swift */; };
 		489D202B1FC6E10A001B4954 /* PHAssetExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D202A1FC6E10A001B4954 /* PHAssetExt.swift */; };
@@ -23,6 +24,8 @@
 		481DF9441FC6C51700578F8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		481DF9471FC6C51700578F8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		481DF9491FC6C51700578F8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4867E60A1FC8299A00F95F09 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		489C4D171FC815D100550659 /* Gallery Viewer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gallery Viewer-Bridging-Header.h"; sourceTree = "<group>"; };
 		489D20261FC6D5E0001B4954 /* ImagesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesTableViewController.swift; sourceTree = "<group>"; };
 		489D20281FC6D768001B4954 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		489D202A1FC6E10A001B4954 /* PHAssetExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHAssetExt.swift; sourceTree = "<group>"; };
@@ -59,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				481DF9411FC6C51700578F8B /* Main.storyboard */,
+				4867E60A1FC8299A00F95F09 /* FirstViewController.swift */,
 				489D20261FC6D5E0001B4954 /* ImagesTableViewController.swift */,
 				489D20281FC6D768001B4954 /* ImageCell.swift */,
 				489D202A1FC6E10A001B4954 /* PHAssetExt.swift */,
@@ -66,6 +70,7 @@
 				481DF9441FC6C51700578F8B /* Assets.xcassets */,
 				481DF9461FC6C51700578F8B /* LaunchScreen.storyboard */,
 				481DF9491FC6C51700578F8B /* Info.plist */,
+				489C4D171FC815D100550659 /* Gallery Viewer-Bridging-Header.h */,
 			);
 			path = "Gallery Viewer";
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 				TargetAttributes = {
 					481DF9391FC6C51700578F8B = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -142,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4867E60B1FC8299A00F95F09 /* FirstViewController.swift in Sources */,
 				489D202B1FC6E10A001B4954 /* PHAssetExt.swift in Sources */,
 				489D20271FC6D5E0001B4954 /* ImagesTableViewController.swift in Sources */,
 				489D20291FC6D768001B4954 /* ImageCell.swift in Sources */,
@@ -282,6 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 649KJCZ7RD;
 				INFOPLIST_FILE = "Gallery Viewer/Info.plist";
@@ -289,6 +297,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vixette.Gallery-Viewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Gallery Viewer/Gallery Viewer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,6 +308,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 649KJCZ7RD;
 				INFOPLIST_FILE = "Gallery Viewer/Info.plist";
@@ -305,6 +316,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vixette.Gallery-Viewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Gallery Viewer/Gallery Viewer-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
